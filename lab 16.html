@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-bottom: 5px solid #2980b9;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        .skills, .languages, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* Card Style for Skills, Languages, Projects */
+        .skills div, .languages div, .projects div {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .skills div:hover, .languages div:hover, .projects div:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* Social Media Links */
+        .social-media a {
+            text-decoration: none;
+            color: #34495e;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #2980b9;
+        }
+
+        /* Project Card Style */
+        .projects div {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .projects p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        .projects a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects a:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <img src="profile imgae" alt="Profile Photo"><br>
+        <h1>Dipak Kanthale </h1>
+        <p>Web Developer | Programmer | Technology Enthusiast</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Summary Section -->
+        <section>
+            <h2>Summary</h2>
+            <p>
+                I am a student of  web developer with a keen interest in building modern, user-friendly websites and applications. 
+                With a strong foundation in HTML, CSS, and JavaScript, I strive to create intuitive and efficient digital experiences.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Science in Computer Science</strong> - Savitribai Phule Unversity pune, 2028</li>
+                <li><strong>Full Stack Web Development Bootcamp</strong> - Zcoer Academy, 2028</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>React</div>
+                <div>Node.js</div>
+                <div>SQL</div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section>
+            <h2>Languages</h2>
+            <div class="languages">
+                <div>English</div>
+                <div>Hindi</div>
+                <div>French</div>
+                <div>Japanese</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div>
+                    <a href="lab11.html"> Task One</a>
+                    <p>My project. </p>
+                </div>
+                <div>
+                    <a href="lab5.html"> Task Second</a>
+                    <p>A project to link based. I complete it.</p>
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <h2>Follow Me</h2>
+            <div class="social-media">
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
